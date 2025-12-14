@@ -5,11 +5,12 @@ repos:
   - hooks:
       - args:
           - --python-version=3.13
-          - --pyright
+          - --pre-commit-prettier
           - --pyproject
+          - --pyright
         id: nitpick
     repo: https://github.com/dycw/pre-commit-hook-nitpick
-    rev: 0.1.16
+    rev: 0.1.17
   - hooks:
       - id: check-executables-have-shebangs
       - id: check-merge-conflict
@@ -27,3 +28,12 @@ repos:
       - id: trailing-whitespace
     repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
+  - hooks:
+      - entry: npx prettier --write
+        id: prettier
+        language: system
+        name: prettier
+        types_or:
+          - markdown
+          - yaml
+    repo: local
