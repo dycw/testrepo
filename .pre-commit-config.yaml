@@ -27,4 +27,4 @@ repos:
     id: pretty-format-json
   - id: trailing-whitespace
   repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: master
+  rev: v6.0.0
