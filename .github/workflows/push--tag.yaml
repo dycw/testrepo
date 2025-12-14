@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tag latest commit
-        uses: dycw/actions-tag-commit@latest
+        uses: dycw/action-tag-commit@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
