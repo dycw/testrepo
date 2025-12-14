@@ -7,7 +7,7 @@ repos:
           - --python-version=3.13
           - --pre-commit-prettier
           - --pyproject
-          - --pyproject
+          - --pyright
         id: nitpick
     repo: https://github.com/dycw/pre-commit-hook-nitpick
     rev: 0.1.17
