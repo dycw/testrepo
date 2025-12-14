@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Tag latest commit
         uses: dycw/actions-tag-commit@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
